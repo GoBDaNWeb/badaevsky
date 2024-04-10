@@ -1,0 +1,126 @@
+@import "../../common/files/variables.scss";
+
+.life {
+  margin-top: 250px;
+  overflow: hidden;
+  @media (max-width: $tab) {
+    margin-top: 150px;
+  }
+  .life-lines {
+    height: 484px;
+    margin-top: 100px;
+    overflow: hidden;
+    background-image: url("../img/epochs/alert-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .black-lines {
+      height: 100%;
+      position: relative;
+      .line {
+        width: 40px;
+        background: var(--black-color);
+        height: 800px;
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        &:nth-child(1) {
+          left: -1%;
+          transform: rotate(7deg);
+        }
+
+        &:nth-child(2) {
+          left: 12%;
+          span {
+            width: 195px;
+            left: -76px;
+            bottom: -200px;
+          }
+        }
+        &:nth-child(3) {
+          left: 19%;
+          transform: rotate(8deg);
+
+          span {
+            left: -45px;
+            width: 130px;
+            top: -240px;
+          }
+        }
+        &:nth-child(4) {
+          left: 27%;
+        }
+        &:nth-child(5) {
+          left: 34%;
+          transform: rotate(-8deg);
+
+          span {
+            left: -84px;
+
+            width: 207px;
+            bottom: -150px;
+          }
+        }
+        &:nth-child(6) {
+          left: 41%;
+          span {
+            left: -61px;
+
+            width: 160px;
+            bottom: -50px;
+          }
+        }
+        &:nth-child(7) {
+          left: 47%;
+          transform: rotate(8deg);
+        }
+        &:nth-child(8) {
+          left: 51%;
+        }
+        &:nth-child(9) {
+          left: 57%;
+          transform: rotate(-8deg);
+        }
+        &:nth-child(10) {
+          left: 61%;
+        }
+        &:nth-child(11) {
+          left: 67%;
+          transform: rotate(8deg);
+        }
+        &:nth-child(12) {
+          left: 93%;
+        }
+        span {
+          color: var(--red-color);
+          transform: rotate(-90deg);
+          display: block;
+          font-weight: 65;
+          font-size: 50px;
+          height: 42px;
+
+          line-height: 50px;
+          font-family: "TT Trailers", sans-serif;
+          letter-spacing: 5px;
+          white-space: nowrap;
+          margin: auto;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          // height: fit-content;
+          // width: fit-content;
+          padding: 0 15px;
+          background: var(--white-color);
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .banner {
+    margin-top: 100px;
+  }
+}
